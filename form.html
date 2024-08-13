@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="Heading">Your Form</h1>
+    </header>
+    <main>
+      <form>
+        <fieldset class="Details">
+          <legend><strong>Personal Information</strong></legend>
+          <p>
+            <label for="Name">Name</label>
+            <input
+              type="text"
+              id="Name"
+              placeholder="Enter your Name"
+              required
+            />
+          </p>
+          <p>
+            <label for="FatherName">FatherName</label>
+            <input
+              type="text"
+              id="FatherName"
+              placeholder="Enter Your Father Name"
+              required
+            />
+          </p>
+          <p>
+            <label for="Email">Mail Id</label>
+            <input
+              type="text"
+              id="Email"
+              placeholder="Enter your Email"
+              required
+            />
+          </p>
+          <p>
+            <label for="DOB">Date of Birth</label>
+            <input type="date" name="DOB" id="DOB" required />
+          </p>
+          <p>
+            <label for="Age">Age</label>
+            <input type="tel" id="Age" placeholder="Enter your Age" required />
+          </p>
+          <p>
+            <label for="Gender">Gender</label>
+            <br />
+            <input type="radio" id="Gender" name="Gender" value="Male" />
+            <label for="Male">Male</label>
+            <input type="radio" id="Gender" name="Gender" value="Female" />
+            <label for="Female">Female</label>
+          </p>
+          <p>
+            <label for="MatrialStatus">Matrial Status</label>
+            <br />
+            <input type="radio" name="Status" id="MatrialStatus" />
+            <label for="Married">Married</label>
+            <input
+              type="radio"
+              id="MatrialStatus"
+              name="Status"
+              value="Unmarried"
+            />
+            <label for="MatrialStatus">Unmarried</label>
+          </p>
+          <p>
+            <label for="PhoneNumber">Phone Number</label>
+            <input
+              type="tel"
+              id="PhoneNumber"
+              placeholder="Enter Your Mobile Number"
+              required
+            />
+          </p>
+          <p>
+            <label for="Language">Language Known</label>
+            <br />
+            <input
+              type="checkbox"
+              id="Language"
+              name="Language"
+              value="Tamil"
+            />
+            <label for="Tamil">Tamil</label><br />
+            <input
+              type="checkbox"
+              id="Language"
+              name="Language"
+              value="English"
+            />
+            <label for="English">English</label><br />
+            <input
+              type="checkbox"
+              id="Language"
+              name="Language"
+              value="Others"
+            />
+            <label for="Others">Others</label>
+          </p>
+        </fieldset>
+        <fieldset class="Details" >
+          <legend><strong>Education</strong></legend>
+          <p>
+            <label for="Degree">Degree</label>
+            <input
+              type="checkbox"
+              id="Degree"
+              name="Qulaification"
+              value="Degree"
+            />
+          </p>
+          <p>
+            <label for="Diploma">Diploma</label>
+            <input
+              type="checkbox"
+              id="Diploma"
+              name="Qulaification"
+              value="Diploma"
+            />
+          </p>
+          <p>
+            <label for="HSC">HSC</label>
+            <input type="checkbox" id="HSC" name="Qulaification" value="HSC" />
+          </p>
+          <p>
+            <label for="SSLC">SSLC</label>
+            <input
+              type="checkbox"
+              id="SSLC"
+              name="Qulaification"
+              value="SSLC"
+            />
+          </p>
+        </fieldset>
+        <fieldset class="Details">
+          <legend><strong>Hobby</strong></legend>
+          <p>
+            <label for="Cricket">Cricket</label>
+            <input
+              type="checkbox"
+              id="Cricket"
+              name="Playing"
+              value="Cricket"
+            />
+          </p>
+          <p>
+            <label for="Tennis">Tennis</label>
+            <input type="checkbox" name="Playing" id="Tennis" value="Tennis" />
+          </p>
+          <p>
+            <label for="Volleyball">Volleyball</label>
+            <input
+              type="checkbox"
+              id="Volleyball"
+              name="Playing"
+              value="Volleyball"
+            />
+          </p>
+          <p>
+            <label for="Kabbaddi">Kabbaddi</label>
+            <input
+              type="checkbox"
+              id="Kabbaddi"
+              name="Playing"
+              value="Kabbaddi"
+            />
+          </p>
+        </fieldset>
+        <fieldset class="Details">
+          <legend><strong>Favourite Food</strong></legend>
+          <p>
+            <label for="Food">Favourite Food</label>
+            <select name="Food" id="Food">
+              <optgroup label="Tiffin">Tiffin</optgroup>
+              <option value="Dosa">Dosa</option>
+              <option value="Idly">Idly</option>
+              <option value="Poori">Poori</option>
+              <option value="Pongal">Pongal</option>
+              <optgroup label="Lunch">Lunch</optgroup>
+              <option value="Meals">Meals</option>
+              <option value="Briyani">Briyani</option>
+              <option value="Curdrice">Curd Rice</option>
+              <option value="Parotta">Parotta</option>
+              <option value="Gheerice">Gheerice</option>
+              <optgroup label="Dinner">Dinner</optgroup>
+              <option value="Dosa">Dosa</option>
+              <option value="Idly">Idly</option>
+              <option value="Parotta">Parotta</option>
+              <option value="KothuParotta">KothuParotta</option>
+              <option value="Naan">Naan</option>
+              <br />
+              <br />
+            </select>
+          
+          <label for="Breakfast">Break Fast</label>
+          <input type="radio" id="Breakfast" name="food" value="Breakfast" />
+          <label for="Lunch">Lunch</label>
+          <input type="radio" id="Lunch" name="food" value="Lunch" />
+          <label for="Dinner">Dinner</label>
+          <input type="radio" id="Dinner" name="food" value="Dinner" /></p>
+        </fieldset>
+      <br><br><br>
+      <button type="submit">Submit</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="reset">Reset</button>
+      </form>
+    </main>
+    <footer>
+      <br /><br />
+      <a href="" target="_top">Back to Top</a>
+    </footer>
+    <br><br>
+    <a href="https://facebook.com/" target="_blank">github</a>
+    <a href="https://www.amazon.com/" target="_blank">google</a>
+  
+</html>
